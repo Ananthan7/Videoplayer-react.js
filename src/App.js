@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Datas from './components/Datas';
 import Navbar from './components/Navbar'
 import './App.css'
+import Items from './components/Items';
 
 function App() {
   
@@ -11,7 +12,8 @@ function App() {
       <div className="Appcomponent">
         <Navbar/>
         <Switch>
-          <Route path="/" component={Datas} />
+          <Route path="/" exact component={Datas} />
+          <Route path="/items/:url" component={Items} />
         </Switch>
       
       </div>

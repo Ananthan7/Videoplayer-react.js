@@ -1,11 +1,23 @@
-
 .vedios{
   position: relative;
-  left: 200px;
+  left: 25%;
+  width: 50%;
+  padding: 15px;
 }
-video{
-  height: 180px;
+.player{
+  position: relative;
+  left: 25%;
+  width: 50%;
+  padding: 15px;
 }
+.player-bottom{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  padding: 10px;
+}
+
+
 img{
   height: 25px;
   width: 26px;
@@ -15,18 +27,39 @@ img{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  width: 100%;
+  padding: 5px;
 }
 @media screen and (max-width: 830px) {
   .datas {
     grid-template-columns: repeat(2, 1fr);
-    position: relative;
-    right: 150px;
+    width: 100%;
+    
   }
+  .vedios{
+    position: relative;
+    left: 15%;
+    width: 100%;
+  }
+
 }
 @media screen and (max-width: 540px) {
   .datas {
     grid-template-columns: 1fr;
-    position: relative;
-    right: 150px;
+    width: 100%;
+    
   }
+  
+  .vedios{
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+  .player{
+    position: relative;
+    left: 0;
+    width: 90%;
+    padding: 15px;
+  }
+
 }
